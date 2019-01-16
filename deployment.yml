@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: my-demo-app
-        image: ibuchh/cf-blue-green
+        image: ibuchh/cf-blue-green:c5566dd
         imagePullPolicy: Always
         ports:
         - name: http
