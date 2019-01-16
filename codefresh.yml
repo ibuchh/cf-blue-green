@@ -15,7 +15,7 @@ steps:
       - DEPLOYMENT_NAME=my-demo-app
       - NEW_VERSION=${{CF_SHORT_REVISION}}
       - HEALTH_SECONDS=60
-      - NAMESPACE=colors
+      - NAMESPACE=default
       - KUBE_CONTEXT=aws-eks
 
    
