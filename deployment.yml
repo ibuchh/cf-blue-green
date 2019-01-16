@@ -2,7 +2,7 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: my-demo-app-c39f076
-  namespace: colors
+  namespace: default
 spec:
   replicas: 2
   template:
@@ -10,11 +10,11 @@ spec:
       labels:
         name: my-demo-app
         app: my-demo-app
-        version: '1d8398d'
+        version: '63ee854'
     spec:
       containers:
       - name: my-demo-app
-        image: ibuchh/cf-blue-green:1d8398d
+        image: ibuchh/cf-blue-green:63ee854
         imagePullPolicy: Always
         ports:
         - name: http
