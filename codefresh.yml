@@ -16,7 +16,7 @@ steps:
       - NEW_VERSION=${{CF_SHORT_REVISION}}
       - HEALTH_SECONDS=60
       - NAMESPACE=default
-      - KUBE_CONTEXT=standard-cluster-1@spinnaker
+      - KUBE_CONTEXT=aws-eks
 
    
 
