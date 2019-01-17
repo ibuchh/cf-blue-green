@@ -7,6 +7,12 @@ steps:
     working_directory: ./
     tag: '${{CF_SHORT_REVISION}}'
     dockerfile: Dockerfile
+  PushingSpringToDockerRegistry:
+    title: Pushing to Docker Registry
+    type: push
+    candidate: '${{BuildingDockerImage}}'
+    tag: '${{CF_SHORT_REVISION}}'
+    registry: dockerhub
   blueGreenDeploy:
     title: "Deploying new version ${{CF_SHORT_REVISION}}"
     image: codefresh/k8s-blue-green:master
