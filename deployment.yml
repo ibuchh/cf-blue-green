@@ -1,7 +1,7 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: my-demo-app-c39f076
+  name: my-demo-app-63ee854
   namespace: default
 spec:
   replicas: 2
